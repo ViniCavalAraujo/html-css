@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Organizando Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="i" start="4"> <!--contem números(1), letras(A) ou (a) e algarismos romanos (I) ou (i)-->
+        <li>Acordar</li>
+        <li>Xsqdl</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <ul> <!-- types : disc(padrão), circle, square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Feijão</li>
+    </ul>
+
+    <h2>Junção de listas</h2>
+
+    <!--Aqui utilizando listas mistas (junção)-->
+    <ul>
+        <li>Times série A</li>
+        <ol type="a"> <!-- a lista <ol> está dentro da li acima -->
+            <li>Corinthians</li>
+            <li>Palmeiras</li>
+            <li>Flamengo</li>
+            <li>São Paulo</li>
+        </ol>
+        <!--fim da ol dentro da li -->
+
+        <li>Times série B</li>
+        <ol type="a" start="5"> <!--desse modo ele inicia na letra e, pois como é um parâmetro numérico,
+            temos que levar isso em conta. -->
+            <li>Seila</li>
+            <li>Sport</li>
+            <li>Mirassol</li>
+            <li>Bragantino</li>
+        </ol>
+    </ul>
+
+    <h2>Meus jogos favoritos</h2>
+    <ul>
+        <li>Playstation</li>
+        <ul type="square">
+            <li>Gta</li>
+            <ol>
+                <li>Gta SA</li>
+                <li>Gta RJ</li>
+                <li>Gta IV</li>
+            </ol>
+            <li>Need For Speed Most Wanted</li>
+        </ul>
+
+        <li>Celular</li>
+        <ul type="square">
+            <li>Pubg Mobile</li>
+        </ul>
+    </ul>
+
+
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+        <dt>Fair-play</dt>
+        <dd>Quando um time sofre por algo e o adversário devolve a bola</dd>
+    </dl>
+
+   
+
+
+</body>
+</html>

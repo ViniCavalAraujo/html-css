@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir esse site em dispositivos diferentes ou aumente e diminua
+        o tamanho do navegador 
+    </p>
+
+    <!--A tag picture está dizendo que vai aparecer uma imagem-->
+    <picture>
+
+        <!-- OBS : as imagens são 1000px, 700px, 300px e 150px respectivamente, coloquei 50px a mais
+         para nao ter aquela barra de rolagem horizontal -->
+
+
+        <!-- Se a tela do navegador for menor que 350 pixels, vai trocar pra imagem PP -->
+        <source media="(max-width: 350px )" srcset="imagens/foto-pp.png" type="image/png">
+
+        <!-- Se a tela do navegador for menor que 750 pixels, vai trocar pra imagem P -->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.jpg" type="image/jpg">
+
+        <!--Se a tela do navegador for menor que 1050 pixels, vai trocar pra imagem M -->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.jpg" type="image/jpg">
+
+        <!-- Imagem padrão que vai aparecer-->
+        <img src="imagens/foto-g.jpg" alt="Imagem Flexivel">
+    </picture>
+
+
+    <h1>Reproduzindo áudio</h1>
+    <p>
+        Reproduzindo áudio em HTML5
+    </p>
+
+
+        <!-- primeiro jeito, mais simples porém limitado:
+        <audio src="midia/360-no-scope-the-soundlings.mp3" controls autoplay>
+        </audio>
+        compatível com esses formatos MP3, WAV, OGG-->
+
+
+        <!-- atributo controls mostra o player de áudio, atributo loop faz o looping do áudio -->
+        <audio preload="metadata" controls loop>
+
+            <!-- Aqui ele começa a reproduizr primeiro em mp3, caso falhe,
+             vai para as opções (sources) abaixo -->
+            <source src="midia/360-no-scope-the-soundlings.mp3" type="audio/mpeg">
+            <source src="midia/360-no-scope-the-soundlings.ogg" type="audio/ogg">
+            <source src="midia/360-no-scope-the-soundlings.wav" type="audio/wav">
+            <p>
+                Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/360-no-scope-the-soundlings.mp3" download="360-no-scope-the-soundlings" type="audio/mpeg">Clique aqui
+                    para baixar o arquivo MP3
+                </a>
+            </p>
+        </audio>
+
+       
+
+</body>
+</html>
