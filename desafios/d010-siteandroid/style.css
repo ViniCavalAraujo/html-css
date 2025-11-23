@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #84E1AD;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, #32B36B, #1E6A40);
+    color: white;
+    padding: 20px 20px 0px 20px;
+}
+
+
+header h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.449);
+}
+
+header p {
+    text-align: center;
+    margin: 30px 0px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.449);
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* espaçamento entre links */
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 12px;
+    font-weight: bold;
+    transition: background-color 0.5 ease 0.2s;
+}
+
+
+nav a:hover {
+    background-color: #84E1AD;
+}
+
+main {
+    background-color: white;
+    width: 90%; /* ocupa 90% da tela, mas nunca mais que 600px */
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    flex: 1;
+}
+
+main h2 {
+    font-family: 'android', 'Arial', sans-serif;
+    color: #1A5C39;
+    background-image: linear-gradient(to right, #D1EFDF, #F0FAF4);
+    margin-right: -20px;
+}
+
+main h3 {
+    background-color: #2FA866;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    margin-right: -7px;
+    margin-left: -7px;
+}
+
+.extra {
+    background-color: #C5EBD6;
+    padding: 0px 7px 10px 7px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.extra p {
+    padding: 10px;
+}
+
+.listas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.listas ul {
+    list-style-type: none;
+}
+
+.listas li::before {
+    content: '✔️';
+}
+
+main p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+main img {
+    max-width: 100%; /* nunca ultrapassa o container */
+    height: auto;    /* mantém proporção */
+    display: block;
+    margin: auto;
+}
+
+.links a{
+    color: #1A5C38;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a::after {
+    content: '🔗';
+}
+
+.video {
+    background-color: #1A5C38;
+    position: relative;
+    width: 100%;         /* ocupa toda largura do container */
+    padding-bottom: 56.25%; /* proporção 16:9 (altura/largura) */
+    height: 0;
+}
+
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #1A5C38;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    padding: 5px;
+}
+
+footer p {
+    margin: 0px;
+}
+
