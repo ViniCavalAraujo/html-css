@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        td.terca {
+            background-color: aqua;
+        }
+
+        .tabela2 .produto:hover, .tabela2 .qtd:hover, .tabela2 .preco:hover {
+            color: initial;
+        }
+        .tabela2 td:hover {
+            color: red;
+        }
+        .preco-banana:hover {
+            color: aqua;
+        }
+       
+        .tabela3 {
+            width: 400px;
+            height: 400px;
+        }
+        .tabela3 td {
+            padding: 5px;
+            vertical-align: top;
+            text-align: center;
+        }
+        .tr3 {
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <tr>
+                <td>Segunda</td>
+                <td class="terca">Terça</td>
+                <td>Quarta</td>
+            </tr>
+            <tr>
+                <td>Matemática</td>
+                <td>História</td>
+                <td>Geografia</td>
+            </tr>
+            <tr>
+                <td>Inglês</td>
+                <td>Matemática</td>
+                <td>Artes</td>
+            </tr>
+        </table>
+        <br>
+        <table class="tabela2">
+            <tr>
+                <td class="produto">Produto</td>
+                <td class="qtd">Qtd</td>
+                <td class="preco">Preço</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>6</td>
+                <td><span class="preco-banana">5,00</span></td>
+            </tr>
+            <tr>
+                <td>Leite</td>
+                <td>2</td>
+                <td>4,50</td>
+            </tr>
+        </table>
+        <br>
+        <table class="tabela3">
+            <tr>
+                <td>Nome</td>
+                <td>Cidade</td>
+                <td>Idade</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>SP</td>
+                <td>20</td>
+            </tr>
+            <tr class="tr3">
+                <td>Lucas</td>
+                <td>MG</td>
+                <td>25</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

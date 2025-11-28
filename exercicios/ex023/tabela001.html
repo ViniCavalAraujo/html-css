@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 400px;
+            height: 200px;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 1.5px solid black;
+            padding: 5px;
+            text-align: center; /*Alinhamento horizontal */
+            vertical-align: top; /*Alinhamento vertical */
+        }
+
+        table td:hover {
+            color: red;
+        }
+
+
+        td.c {
+            position: relative;
+        }
+        .number {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+        }
+        
+        .c:hover {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeira Tabela</h1>
+    <!--
+    HIERARQUIA DE TABELA (SIMPLES)
+    TABLE = Tabela
+        TABLE ROW = Linha de tabela
+        TABLE HEADER = Cabeçalho de tabela
+        TABLE DATA = Dado de tabela
+    -->
+    <table>
+        <tr> <!-- primeira linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!-- segunda linha -->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- terceira linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- quarta linha -->
+            <td>A4</td>
+            <td>B4</td>
+            <td class="c">C<span class="number">4</span></td>
+        </tr>
+    </table>
+</body>
+</html>
