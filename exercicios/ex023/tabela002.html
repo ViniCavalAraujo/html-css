@@ -11,15 +11,25 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         th, td {
             border: 1px solid black;
             padding: 10px;
-        }
+        }   
 
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        tbody > tr:nth-child(3n+2){
+            background-color: lightgray;
         }
         td.num {
             text-align: right;
@@ -29,6 +39,9 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+        }
+      p:nth-last-child(n+3) {
+            color: red;
         }
     </style>
 </head>
@@ -198,5 +211,12 @@
             </tr>
         </tfoot>
     </table>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias veniam, sed placeat libero impedit iure ducimus ipsa hic tempora voluptates eum voluptate molestiae totam laborum, excepturi quis obcaecati. Cumque, eaque?</p>
+        <p>Tempore culpa quo odit molestias voluptate voluptatem odio quasi aspernatur quis expedita. Temporibus eum numquam sequi minima totam cumque? Quod magni eligendi officia tempora, magnam voluptas error natus quasi vel?</p>
+        <p>Incidunt quis quasi quod delectus recusandae consectetur vel, voluptatum nobis, perferendis, voluptate reiciendis saepe corrupti quas asperiores dicta tenetur? Earum, tenetur optio. Veniam, aliquam? Unde maxime voluptas culpa iusto tempore!</p>
+        <p>Soluta nihil voluptates tempora, earum ducimus quis quod sed veniam accusamus debitis ipsum magnam facilis eius nisi? Iusto, eveniet nostrum. Ab ipsum adipisci quas enim totam dicta tempora iusto deleniti.</p>
+        
+    </div>
 </body>
 </html>
