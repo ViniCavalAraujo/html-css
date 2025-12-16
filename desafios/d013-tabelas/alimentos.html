@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }    
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            width: 500px;
+        }
+
+       
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td {
+            background-color: rgb(235, 235, 235);
+        }
+        .recomendado {
+            background-color: lightgreen;
+        }
+        .n-recomendado {
+            background-color: rgb(237, 95, 95);
+        }
+        .evitar {
+            background-color: rgb(235, 235, 77);
+        }
+
+        tbody > tr:nth-child(2n) td:not(.recomendado):not(.n-recomendado):not(.evitar){
+    background-color: pink;
+}   
+
+
+        </style>
+</head>
+<body>
+    <table class="table1">
+        <caption
+        ><strong style="color: red;">Recomendação alimentar</strong>
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Alimentos</th>
+                <th scope="col">Classificação</th>
+                <th scope="col">Consumo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maçã</td>
+                <td>Fruta</td>
+                <td class="recomendado">Recomendado</td>
+            </tr>
+            <tr>
+                <td>Arroz</td>
+                <td>Grão</td>
+                <td class="recomendado">Recomendado</td>
+            </tr>
+            <tr>
+                <td>Alface</td>
+                <td>Vegetal</td>
+                <td class="recomendado">Recomendado</td>
+            </tr>
+            <tr>
+                <td>Salsicha</td>
+                <td>Carne</td>
+                <td class="n-recomendado">Não recomendado</td>
+            </tr>
+            <tr>
+                <td>Feijão</td>
+                <td>Grão</td>
+                <td class="recomendado">Recomendado</td>
+            </tr>
+            <tr>
+                <td>Frango</td>
+                <td>Carne</td>
+                <td class="recomendado">Recomendado</td>
+            </tr>
+            <tr>
+                <td>Refrigerante</td>
+                <td>Líquido</td>
+                <td class="n-recomendado">Não recomendado</td>
+            </tr>
+            <tr>
+                <td>Linguiça</td>
+                <td>Carne</td>
+                <td class="evitar">Evitar em excesso</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Fruta</td>
+                <td class="recomendado">Recomendado</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table style="width: 200px;" class="table2">
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+           
+        </tr>
+        <tr>
+             <td rowspan="2
+             ">3</td>
+             <td>4</td>
+             <td class="cinco">5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">8</td>
+        </tr>
+        <tr>
+            <td colspan="2
+            ">9</td>
+            <td>10</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
