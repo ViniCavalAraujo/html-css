@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            padding: 10px;
+            font-weight: bolder;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        tfoot {
+            background-color: green;
+        }
+        tfoot > tr {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Relatório de Venda - 2025</caption>
+        <tbody>
+            <tr>
+                <th scope="rowgroup">Produto</th>
+                <td>Sal</td>
+                <td>Azeite</td>
+                <td>Arroz</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup">Jan</th>
+                <td>25,00</td>
+                <td>60,00</td>
+                <td>35,00</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup">Fev</th>
+                <td>26,50</td>
+                <td>65,50</td>
+                <td>32,60</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup">Mar</th>
+                <td>22,30</td>
+                <td>70,00</td>
+                <td>31,50</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="rowgroup">Total</th>
+                <td>73,80</td>
+                <td>195,50</td>
+                <td>99,10</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--nesse eu fiz diferente do que você mandou, pois se eu fizesse nesse formato não teria sentido utilizar um thead já que os dados ficam diretos em horizontal, então coloquei direto no tbody, já no tfoot optei por não usar rowspan já que tinha que colocar o total dos valores então nem precisou mesclar-->
+</body>
+</html>

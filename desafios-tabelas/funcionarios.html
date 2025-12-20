@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            padding: 10px;
+            font-weight: bolder;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Funcionários</caption>
+        <thead>
+            <tr>
+                <th scope="colgroup">Nome</th>
+                <th scope="colgroup">Setor</th>
+                <th scope="colgroup">Cargo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>Tecnologia</td>
+                <td>Front-end</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Tecnologia</td>
+                <td>Back-end</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>Recursos Humanos</td>
+                <td>Analista de RH</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>Financeiro</td>
+                <td>Analista Financeiro</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- esse deixei dessa forma fiz algumas modificações pois achei meio confuso e sem lógica do modo que você mandou para fazer-->
+     <br>
+     <table>
+        <caption>Funcionários</caption>
+        <tbody>
+             <tr>
+                <th scope="rowgroup">Nome</th>
+                <td>Ana</td>
+                <td>João</td>
+                <td>Carla</td>
+                <td>Marcos</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup">Setor</th>
+                <td>Tecnologia</td>
+                <td>Tecnologia</td>
+                <td>Recursos Humanos</td>
+                <td>Financeiro</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup">Cargo</th>
+                <td>Front-end</td>
+                <td>Back-end</td>
+                <td>Analista de Recursos Humanos</td>
+                <td>Analista Financeiro</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- de qualquer maneira fiz outra utilizando rowgroup como você pediu -->
+</body>
+</html>

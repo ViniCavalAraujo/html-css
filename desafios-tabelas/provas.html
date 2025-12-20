@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médias</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption {
+            padding: 10px;
+            font-weight: bolder;
+        }
+        th, td {
+            padding: 10x;
+            border: 1px solid black;
+        }
+        /*aqui abaixo não entendi muito bem, se eu uso tr:not ele não pinta nada nem th:not, só funcionou quando usei td:not só que não entendi já que .prova1 e .prova2 são th e estão dentro de uma tr, não são um td*/
+        tr:nth-child(2n)  {
+            background-color: gray;
+        }
+
+        .prova1, .prova2 {
+            background-color: white;
+        }
+
+        .mediafinal {
+            background-color: lightgreen;
+        }
+        
+        #container {
+            overflow-x: auto;
+            /*aprendi esse novo comando para criar rolagem lateral na tabela ao diminuir a tela */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <caption>Médias</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Área</th>
+                    <th rowspan="2" scope="colgroup">Disciplina</th>
+                    <th colspan="2" scope="colgroup">Avaliações</th>
+                    <th rowspan="2" scope="colgroup" class="mediafinal">Média Final</th>
+                   <tr>
+                       <th class="prova1">Prova 1</th>
+                       <th class="prova2">Prova 2</th>
+                   </tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="teste">Humanas</td>
+                    <td>Biologia</td>
+                    <td>7,5</td>
+                    <td>8,5</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Humanas</td>
+                    <td>Geografia</td>
+                    <td>6,0</td>
+                    <td>6,5</td>
+                    <td>6,25</td>
+                </tr>
+                <tr>
+                    <td>Exatas</td>
+                    <td>Matemática</td>
+                    <td>8,5</td>
+                    <td>9,5</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Exatas</td>
+                    <td>Física</td>
+                    <td>9,0</td>
+                    <td>9,5</td>
+                    <td>9,25</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
