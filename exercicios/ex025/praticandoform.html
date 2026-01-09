@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Formulário</title>
+    <style>
+        #form {
+            background-color: lightblue;
+            width: 20em;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum provident a aliquam voluptas labore dolore earum numquam nisi molestiae! Veniam sed cupiditate corrupti adipisci aperiam rerum hic aut, odio officia.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum temporibus nihil accusantium cupiditate tempora nam saepe et optio excepturi dicta explicabo nisi, esse commodi dolores. Libero magni reiciendis natus molestias!
+    </p>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <h2>Leia e preencha com atenção</h2>
+    <div id="form">
+        <form action="cadastro.php" autocomplete="off">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome">
+            </p>
+            <p>
+                <label for="icargo">Cargo:</label>
+                <input type="text" name="cargo" id="icargo">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
