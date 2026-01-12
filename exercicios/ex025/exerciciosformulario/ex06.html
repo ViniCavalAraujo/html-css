@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            position: relative;
+            height: 98vh;
+        }
+        ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+        form {
+            background-color: lightblue;
+            max-width: 310px;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        h1 {
+            text-align: center;
+            padding-top: 140px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="../cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required placeholder="nome completo" maxlength="50">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required placeholder="8 a 15 caracteres" minlength="8" maxlength="15">
+        </p>
+        <p>
+            <label for="idata">Data de nascimento:</label>
+            <input type="date" name="data" id="idataa" required>
+        </p>
+        <p>
+            <label for="imes">Mês de contratação:</label>
+            <input type="month" name="mes" id="imes" required>
+        </p>
+        <p>
+            <label for="ientrada">Horário de entrada:</label>
+            <input type="time" name="entrada" id="ientrada" required>
+        </p>
+         <p>
+            <label for="isaida">Horário de saída:</label>
+            <input type="time" name="saida" id="isaida" required>
+        </p>
+        <p>
+            <label for="ihorario">Carga horária semanal:</label>
+            <input type="number" name="horario" id="ihorario" required min="0" max="60" required value="40">
+        </p>
+    
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
