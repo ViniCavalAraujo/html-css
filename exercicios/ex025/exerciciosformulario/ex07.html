@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            padding: 20px;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 2px;
+        }
+
+        .nome label, .sobrenome label, .idade label {
+            width: 100px;
+        }
+
+        .nome input, .sobrenome input, .idade input {
+            width: 200px;
+            margin-left: -20px;
+        }
+        .nome input, .idade input {
+            margin-left: -57px;
+        }
+        .idade input {
+            width: 60px;
+        }
+
+        .data label, .endereco label, .complemento label, .sexo, .email label, .telefone label, .cargo label, .salario label {
+            padding-right: 5px;    
+        }
+        .semcompl {
+            margin-left: 10px;
+        }
+        .masculino, .feminino {
+            margin-left: 10px;
+        }
+        .botoes {
+           margin: 5px;
+        }
+        legend {
+            padding: 10px;
+        }
+        .salario input {
+            width: 100px;
+        }
+        .termos label {
+            margin-left: 10px;
+        }
+        .termos input {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="../cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div class="nome">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required maxlength="15">
+            </div>
+            <div class="sobrenome">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required maxlength="30">
+            </div>
+            
+            <div class="idade">
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" required min="18" max="60" placeholder="18 a 60">
+            </div>
+            <div class="data">
+                <label for="data">Data de nascimento</label>
+                <input type="date" name="data" id="data" required>
+            </div>
+            <div class="endereco">
+                <label for="ende">Endereço</label>
+                <input type="text" name="ende" id="ende" required>
+            </div>
+            <div class="complemento">
+                <label for="compl">Complemento</label>
+                <input type="text" name="compl" id="compl" required>
+                <input type="radio" name="semcompl" id="semcompl" class="semcompl">
+                <label for="semcompl">Sem complemento</label>
+            </div>
+            <div>
+                <span class="sexo">Sexo</span>
+            
+                <label for="masc" class="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="masc" value="M" class="masculino">
+                <label for="fem" class="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="fem" value="F" class="feminino">
+            </div>
+            <div class="email">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required maxlength="40">
+            </div>
+            <div class="telefone">
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" required placeholder="(xx)xxxxx-xxxx" pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$">
+            </div>
+            <div class="cargo">
+                <label for="cargo">Cargo</label>
+                <input type="text" name="cargo" id="cargo" required>
+            </div>
+            <div class="salario">
+                <label for="salario">Pretensão salarial</label>
+                <input type="number" name="salario" id="salario" step="100" required min="2000" max="5000" placeholder="2000 a 5000">
+            </div>
+            <div class="termos">
+                <span>Você concorda com os termos?</span>
+
+                <label for="sim" class="sim">Sim</label>
+                <input type="radio" name="termos" id="sim" checked>
+
+                <label for="nao" class="nao">Não</label>
+                <input type="radio" name="termos" id="nao">
+            </div>
+            <div>
+                <input type="submit" value="Enviar" class="botoes">
+                <input type="reset" value="Limpar" class="botoes">
+            </div>
+        </fieldset>
+    </form>
+        
+</body>
+</html>
