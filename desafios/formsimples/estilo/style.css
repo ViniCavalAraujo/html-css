@@ -40,6 +40,8 @@ legend {
 
 div {
     padding: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 div input:not(.enviar-curriculo) {

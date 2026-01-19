@@ -8,15 +8,14 @@
 </head>
 <body>
     <main>
-        <!-- arquivo php apenas para simular -->
-        <form action="cadastro.php" method="post" autocomplete="on">
+        <form action="#" method="post" autocomplete="on">
             <fieldset class="formulario">
                 <legend>Cadastre-se</legend>
                 <div>
                     <label for="nome">Nome completo</label>
                     <input type="text" name="nome" id="nome" required maxlength="60">
                 </div>
-                <div>
+                <div class="form-nascimento">
                     <label for="data">Data de nascimento</label>
                     <input type="date" name="data" id="data" required>
                 </div>
@@ -29,7 +28,7 @@
                     <input type="radio" name="sexo" id="fem">
                 </div>
                 
-                <div>
+                <div class="form-email">
                     <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" required maxlength="40">
                 </div>
@@ -39,7 +38,7 @@
                 </div>
                 <div class="form-tel">
                     <label for="area">Área de atuação</label>
-                    <select name="area" id="area">
+                    <select name="area" id="area" required>
                         <option value="">---Selecione---</option>
                         <option value="ADM">Administração</option>
                         <option value="CONT">Contabilidade</option>
