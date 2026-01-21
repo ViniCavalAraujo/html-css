@@ -1,0 +1,10 @@
+
+
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'teste';
+}
