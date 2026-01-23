@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    background-color: lightgray;
+    padding-top: 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+
+menu li {
+    display: inline-block;
+    background-color: rgb(142, 138, 138);
+    border-top: 2px solid black;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    border-bottom: 2px solid black;
+}
+
+main p {
+    padding: 10px;
+}
+
+
+@media only print {
+    header h1 {
+        text-align: left;
+    }
+    header menu {
+        display: none;
+    }
+    main {
+        max-width: 600px;
+        margin: auto;
+    }
+    main h2 {
+        border: 2px solid black;
+    }
+    main p {
+        text-align: justify;
+    }
+    main::after {
+        text-decoration: overline;
+        content: 'notícia original disponível em www.teste.com';
+    }
+}
