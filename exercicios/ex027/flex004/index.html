@@ -8,13 +8,15 @@
         div.conteiner {
             background-color: blue;
             display: flex;
-            height: 100px;
-            flex-flow: row-reverse wrap-reverse;
+            flex-flow: row-reverse nowrap;
+            justify-content: space-evenly;
+            height: 400px;
+            align-items: flex-end;
+            flex-wrap: wrap;
         }
         div.item {
             background-color: lightblue;
-            flex: 1 0 150px;
-  outline: 1px solid red;
+            
         }
     </style>
 </head>
