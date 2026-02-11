@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: lightblue;
+        }
+        main {
+            background-color: gray;
+            max-width: 450px;
+            margin: auto;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        .card {
+            background-color: lightslategray;
+            max-width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            outline: 1px solid red;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1>Vinícius</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem id ipsum corporis quasi temporibus! Inventore ducimus alias eum commodi optio? Rem explicabo cum quidem fuga quia fugit! Animi, numquam atque?</p>
+            <nav>
+                <a href="">Skills</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </main>
+</body>
+</html>
