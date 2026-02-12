@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <main>
+        <section class="card">
+            <h1>Seção</h1>
+            <nav class="menu">
+                <a href="#" class="item">Opção 1</a>
+                <a href="#" class="item">Opção 2</a>
+                <a href="#" class="item">Opção 3</a>
+            </nav>
+            <div class="img">
+                <p>Trocar imagem</p>
+            </div>
+            <div class="nivel-satisfacao">
+                <label for="nivel">Nível</label>
+                <input type="range" name="nivel" id="nivel" value="0" min="0" max="10" oninput="val.innerHTML = Number(nivel.value)">
+                <output id="val">0</output>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
