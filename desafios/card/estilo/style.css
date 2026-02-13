@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-color: lightblue;
+    background-color: black;
     position: relative;
     height: 100vh;
 }
@@ -19,11 +19,14 @@ body {
 main {
     background-color: rgb(247, 195, 195);
     padding: 40px;
-    min-width: 420px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background: url(../imagens/transparent.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
 }
 
 .card {
@@ -35,48 +38,128 @@ main {
     flex-flow: column nowrap;
     align-items: center;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.408);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.499);
+}
+
+.menu, .fundo, .nivel-satisfacao {
+    flex: 1 1 auto;
 }
 
 .menu {
     background-color: rgb(193, 193, 193);
     padding: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 10px;
+
+}
+
+.menu > a {
+    text-align: center;
+    flex: 1 1 auto;
+    transition: background-color 0.3 ease, color 0.3s ease;
+}
+
+.menu > a:hover {
+    background-color: rgb(107, 106, 106);
+    color: white;
 }
 
 .item {
     text-decoration: none;
     padding: 5px;
-    color: red;
+    color: black;
     background-color: rgb(207, 207, 207);
     margin: 0px 5px;
     border-radius: 5px;
 }
 
-.img {
+
+#fundo {
     background: url(../imagens/testezz.png);
     width: 250px;
     height: 250px;
-    margin: 20px 0px;
     border-radius: 10px;
     background-size: cover;
     background-position: center bottom;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden; /* ajuda a esconder a ponta da imagem se adequando ao border-radius */
 }
 
-.img > p {
-    background-color: rgba(0, 0, 0, 0.51);
-    color: white;
-    padding: 30px;
+#fundo img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
+
+#trocar-img {
+    background-color: rgba(0, 0, 0, 0.318);
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#trocar-img > img {
+    filter: invert(1);
+}
+
+#trocar-img > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+}
+
 
 .nivel-satisfacao { 
     display: flex;
     gap: 10px;
+    margin-top: 10px;
+}
+
+/* telas medias */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .card {
+        min-width: 50vw;
+    }
+    .menu {
+        min-width: 50vw;
+    }
+    #fundo {
+        min-width: 50vw;
+    }
+    #trocar-img {
+        min-width: 50vw;
+    }
+}
+
+/* telas grandes */
+@media screen and (min-width: 1200px) {
+    .card {
+        min-width: 70vw;
+    }
+    .menu {
+        min-width: 70vw;
+    }
+    #fundo {
+        min-width: 70vw;
+    }
+    #trocar-img {
+        min-width: 70vw;
+    }
 }
