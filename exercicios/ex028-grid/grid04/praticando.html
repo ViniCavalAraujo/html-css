@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 2px solid blue;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        header {
+            background-color: red;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 150px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .menu {
+            background-color: green;
+
+        }
+
+        .conteudo {
+            background-color: pink;
+        }
+
+        footer {
+            background-color: orange;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <main>
+        <div class="menu">Menu</div>
+        <div class="conteudo">Conteúdo</div>
+    </main>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>
